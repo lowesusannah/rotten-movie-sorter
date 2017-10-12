@@ -20,9 +20,8 @@ $(document).ready(function(){
     // $(".table").hide();
   $(".output-table").append("<td>" + movieInput + "</td>" + "<td>" + movieRelease + "</td>" + "<td>" + movieScore + "</td>");
 
-  $("#more-forms").submit(function(event){
+  $("#more-forms").click(function(event){
     event.preventDefault();
-    $("td").remove();
     $(".output-table").show();
     $("#rotten").hide();
     var movieInput = $("input#movie-name").val();
@@ -31,6 +30,8 @@ $(document).ready(function(){
 
     // $(".table").hide();
   $(".output-table").append("<td>" + movieInput + "</td>" + "<td>" + movieRelease + "</td>" + "<td>" + movieScore + "</td>");
+
+
 
 
   });
