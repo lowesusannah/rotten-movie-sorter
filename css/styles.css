@@ -16,3 +16,51 @@ table {
 td:first-child {
   font-weight: bold;
 }
+
+label {
+  margin: 150px;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+input {
+  width: 50%;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  margin: 20px;
+  float: right;
+}
+
+form {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  border: 10px solid black;
+  width: 900px;
+  height: 400px;
+}
+
+#form-part1 {
+  float: left;
+  position: relative;
+}
+
+#form-part2 {
+  float: left;
+  position: relative;
+}
+
+
+#form-part3 {
+  float: left;
+  position: relative;
+}

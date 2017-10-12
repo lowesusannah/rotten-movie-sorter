@@ -2,36 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Oswald|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Rotten Tomato Movie Sorter</title>
   </head>
   <body>
-    <form id="rotten" action="index.html" method="post">
-      <label for="movie-name" type="text">Movie Name</label>
-      <input id="movie-name" type="text">
+    <div class="container">
 
-      <label for="movie-release">Year Movie was Released</label>
-      <input id="movie-release" type="text">
+      <form id="rotten" action="index.html" method="post">
 
-      <label for="movie-score">How would you score this movie?</label>
-      <input id="movie-score" type="text">
+        <div id="form-part1">
+          <label for="movie-name" type="text">Movie Name</label>
+          <input id="movie-name" type="text">
+        </div>
 
-      <button type="submit" class="btn">SORT</button>
-    </form>
+        <div id="form-part2">
+          <label for="movie-release">Year Movie was Released</label>
+          <input id="movie-release" type="text">
+        </div>
 
-    <table class="table">
-      <thead>
-        <th>Title of Movie</th>
-        <th>Year Released</th>
-        <th>Tomatometer Score</th>
-      </thead>
-      <tbody>
-        <tr>
-        </tr>
-      </tbody>
-    </table>
+        <div id="form-part3">
+          <label for="movie-score">How would you score this movie?</label>
+          <input id="movie-score" type="text">
+        </div>
+        <button id="more-forms" type="submit" name="button">Give me more form!</button>
+        <button id="sort" type="submit" class="btn">SORT</button>
+      </form>
+    </div>
 
+      <table class="output-table">
+        <thead>
+          <th>Title of Movie</th>
+          <th>Year Released</th>
+          <th>Tomatometer Score</th>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
   </body>
 </html>

@@ -7,16 +7,30 @@
 
 //Front End Logic
 $(document).ready(function(){
+  $(".table").hide();
   $("form#rotten").submit(function(event){
     event.preventDefault();
     $("td").remove();
+    $(".output-table").show();
+    $("#rotten").hide();
     var movieInput = $("input#movie-name").val();
     var movieRelease = $("input#movie-release").val();
     var movieScore = $("input#movie-score").val();
 
     // $(".table").hide();
-  $(".table").append("<td>" + movieInput + "</td>" + "<td>" + movieRelease + "</td>" + "<td>" + movieScore + "</td>");
+  $(".output-table").append("<td>" + movieInput + "</td>" + "<td>" + movieRelease + "</td>" + "<td>" + movieScore + "</td>");
 
+  $("#more-forms").submit(function(event){
+    event.preventDefault();
+    $("td").remove();
+    $(".output-table").show();
+    $("#rotten").hide();
+    var movieInput = $("input#movie-name").val();
+    var movieRelease = $("input#movie-release").val();
+    var movieScore = $("input#movie-score").val();
+
+    // $(".table").hide();
+  $(".output-table").append("<td>" + movieInput + "</td>" + "<td>" + movieRelease + "</td>" + "<td>" + movieScore + "</td>");
 
 
   });
