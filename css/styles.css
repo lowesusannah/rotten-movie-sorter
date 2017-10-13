@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 td, th {
   border: 1px solid #1D96B2;
   padding: 0.5rem;
@@ -18,7 +26,7 @@ td:first-child {
 }
 
 label {
-  margin: 150px;
+  margin: 15px;
   padding: 5px;
   width: 100px;
   height: 100px;
@@ -26,13 +34,14 @@ label {
 
 input {
   width: 50%;
-  background-color: black;
-  color: white;
+  background-color: #497EBF;
+  color: black;
   padding: 5px;
   font-size: 15px;
   margin: 20px;
-  float: right;
+  border-radius: 7px;
 }
+
 
 form {
   font-family: 'Raleway', sans-serif;
@@ -44,23 +53,19 @@ body {
 }
 
 .container {
-  border: 10px solid black;
+  background-image: url("../img/Movie-Ticket-Template.jpg");
+  background-size: cover;
+  margin: 15px;
   width: 900px;
   height: 400px;
 }
 
-#form-part1 {
+.form {
   float: left;
   position: relative;
+  width: 500px;
 }
 
-#form-part2 {
-  float: left;
-  position: relative;
-}
-
-
-#form-part3 {
-  float: left;
-  position: relative;
+input: active {
+  background-color: rgba(73,126,191, 0.9);
 }
